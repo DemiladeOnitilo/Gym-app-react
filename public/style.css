@@ -1,0 +1,1174 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #151515;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+}
+
+*{
+  scrollbar-color: #1d2229 #fff;
+    scrollbar-width: thin;
+}
+
+nav{
+  position: fixed;
+}
+
+.nav-bar{
+    background-color: black ;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    height: 100px;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
+}
+
+#mobile{
+  display: none;
+}
+
+  .site-title{
+    font-size: 50px;
+  }
+
+  .site-title img{
+    border: 0;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+  }
+  .site-title span{
+    color: red;
+  }
+  
+  #nav-link{
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-bar a{
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+    cursor: pointer;
+  }
+  
+  .nav-bar li.active{
+    background-color: darkred;
+  }
+  
+  .nav-bar li:hover{
+    background-color: darkred;
+  }
+
+  .home-heading{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    background-image: url("https://wallpapers.com/images/featured/fitness-background-hudcpy1trzmtiw2t.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-heading h1{
+    font-size: 50px;
+  }
+  .home-heading h1 span{
+    color: red;
+  }
+
+  .home-heading p{
+    font-size: 30px;
+  }
+  
+  .home-heading p span{
+    color: red;
+  }
+  
+  .premade-buttons{
+    height: 40px;
+    width: 120px;
+    font-size: 10px;
+    color: white;
+    font-weight: 800;
+    border: 3px solid red;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .premade-buttons:hover{
+    background-color: red;
+    color: black;
+  }
+
+  .head-button{
+    align-items: center;
+    display: flex;
+    gap: 10px;
+  }
+
+  .about-container{
+    margin-top: 50px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-heading h2{
+    color: white;
+    font-size: 40px;
+  }
+
+  .about-heading h2 span{
+    color: red;
+  }
+
+  .about-heading p{
+    font-size: 30px;
+    color: white;
+  }
+
+  .about-heading p span{
+    color: red;
+  }
+
+  .about-card-conatiner{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 550px 550px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+   
+  }
+
+  .special-card{
+    display: flex;
+    width: 550px;
+    height: 300px;
+  }
+  
+  .special-card img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .special-card h3{
+    font-size: 30px;
+    color: red;
+    margin: 0;
+    border-bottom: 2px solid white;
+  }
+
+  .special-card p{
+    color: white;
+    font-size: 13px;
+    margin-left: 10px;
+    margin-right: 5px;
+    line-height: 22px;
+  }
+
+  .special-card-desc{
+    background-color: black;
+    margin-left: -45%;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+
+
+  .member-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .member-desc{
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .member-desc h1{
+    font-size: 80px;
+  }
+
+  .member-desc h1 span{
+    color: red;
+  }
+
+  .member-img{
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(254, 27, 27, 0.5), rgba(255, 6, 6, 0.3), rgba(254, 53, 27, 0)), url("https://t3.ftcdn.net/jpg/05/98/47/52/360_F_598475267_cMBBmM6j8kTT1HsRMbauvPwERoFgTKTA.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .trainer-container{
+    height: auto;
+    width: 100%;
+    margin: 0;
+  }
+
+  .trainer-heading{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 56%;
+  }
+
+  .trainer-heading h1 span{
+    color: red;
+  }
+
+  .trainer-cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center; 
+  }
+
+  .profile-card{
+    background-color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 350px;
+    height: 500px;
+    text-align: center;
+    color: white;
+  }
+
+  .profile-card img{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .profile-card-heading{
+    text-align: left;
+    margin-left: 20px;
+    height: 125px;
+  }
+
+  .profile-card-heading h1{
+    color: red;
+    margin-top: 20px;
+    font-size: 25px;
+    border-bottom: 2px solid white;
+  }
+
+  .profile-card-heading p{
+    font-size: 20px;
+  }
+
+  .social-icons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .social-icons a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .social-icons a:hover{
+    color: grey;
+  }
+
+  .motto-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .motto-desc{
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .motto-desc h2{
+    font-size: 40px;
+  }
+
+  .motto-desc h1{
+    font-size: 80px;
+  }
+
+  .motto-desc h1 span{
+    color: red;
+  }
+
+  .motto-img{
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(254, 27, 27, 0.5), rgba(255, 6, 6, 0.3), rgba(254, 53, 27, 0)), url("https://i.ytimg.com/vi/z-euig3PbRM/maxresdefault.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .member-join-container{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+
+  .member-join-heading{
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .member-join-heading h1{
+    font-size: 50px;
+  }
+
+  .member-join-heading h1 span{
+    color: red;
+  }
+
+  .member-join-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .member-card-container{
+    background: linear-gradient(70deg, rgb(0, 0, 0) 38.8%, rgb(178, 14, 14) 98.6%);
+    color: white;
+    width: 400px;
+    height: 570px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 2%;
+    border: 1px solid white;
+  }
+
+  .member-card-desc hr{
+    width: 300px;
+  }
+  
+  .member-card-desc h1{
+    margin-top: 0;
+    font-size: 40px;
+  }
+
+  .member-card-desc h2{
+    font-size: 50px;
+    margin: 0;
+  }
+
+  .member-card-desc h2 span{
+    font-size: 25px;
+  }
+
+  .member-card-desc p{
+    font-size: 20px;
+  }
+
+  .member-card-desc button{
+    width: 300px;
+    font-size: 15px;
+    justify-content: center;
+  }
+
+  .icon{
+    color: red;
+  }
+
+  .footer-container{
+    height: 90vh;
+    width: 100%;
+    color: white;
+  }
+
+  .footer-top{
+    background-image: url("https://hips.hearstapps.com/hmg-prod/images/bxr-boxinggym-hd-6-1578995830.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    height: 40vh;
+  }
+
+  .footer-bottom{
+    background-color: black;
+    height: 50vh;
+  }
+
+  .footer-bottom-info{
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+
+  .footer-bottom-info h1{
+    font-size: 30px;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+  }
+
+  .footer-bottom-info p{
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .info{
+    margin-top: 100px;
+    text-align: left;
+  }
+
+  .info h1 span{
+    color: red;
+  }
+
+  .info img{
+    border: 0;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+  }
+  .quick-links{
+    margin-top: 100px;
+    
+  }
+
+  .quick-links ul{
+    line-height: 40px;
+  }
+
+  .quick-links li{
+    list-style: none;
+    font-size: 20px;
+  }
+
+  .news-letter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .news-letter input{
+    height: 30px;
+    width: auto;
+    background-color: white;
+    color: black;
+  }
+
+  .news-letter button{
+    font-size: 15px;
+  }
+
+  .classes-heading{
+    height: 70vh;
+    color: white;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/6237dc715116d4602aceef5c/075ad7bc-cedd-46a0-a8fb-61f959feb97d/pexels-mike-gonza%CC%81lez-14623739.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .classes-heading h1{
+    font-size: 50px;
+  }
+  .classes-heading h1 span{
+    color: red;
+  }
+
+  .classes-heading p{
+    font-size: 30px;
+  }
+  
+  .classes-heading p span{
+    color: red;
+  }
+
+  .classes-container{
+    height: 150vh;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .classes-card-heading{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+
+  .classes-card-heading h1{
+    font-size: 35px;
+  }
+
+  .classes-card-heading h1 span{
+    color: red;
+  }
+  
+  .classes-cards-container{   
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 400px 400px 400px 400px;
+    column-gap: 40px;
+    row-gap: 40px;
+  }
+
+  .classes-card{
+    width: 400px;
+    height: 600px;
+    color: white;
+  }
+
+  .classes-card img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .classes-card-desc{
+    background-color: black;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .classes-card-desc h1{
+    font-size: 35px;
+    color: red;
+    border-bottom: 2px solid white;
+    margin-left: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .classes-card-desc p{
+    font-size: 15px;
+    margin-left: 25px;
+  }
+
+  .classes-end{
+    background-image: url("https://gymplus.ie/wp-content/uploads/2019/07/LES-MILLS-SPRINT-FACEBOOK-COVER-9.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    margin-bottom: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .classes-end h1{
+    color: white;
+  }
+
+  .classes-end h1 span{
+    color: red;
+  }
+
+  .about-page-heading{
+    background-image: url("https://i.pinimg.com/originals/0c/8e/b8/0c8eb8bb610ba7f4970a1cef39459f11.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-page-heading h1{
+    color: white;
+    font-size: 50px;
+  }
+
+  .about-page-heading h1 span{
+    color: red;
+  }
+
+  .about-body{
+    height: 70vh;
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .about-body h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-body h1 span{
+    color: red;
+  }
+
+  .about-main{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    color: white;
+  }
+
+  .about-main h2{
+    font-size: 35px;
+    margin: 0;
+    margin-left: 30px;
+  }
+
+  .about-main p{
+    font-size: 20px;
+    margin-left: 30px;
+  }
+
+  .about-main-one{
+    width: 700px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .about-story{
+    background-image: linear-gradient(90deg, rgba(254, 27, 27, 0.5), rgba(255, 6, 6, 0.3), rgba(254, 53, 27, 0)), url("https://www.pixelstalk.net/wp-content/uploads/images6/Man-Gym-Wallpaper-HD.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .about-mission{
+    background-color: black;
+    width: 600px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .about-values{
+    background-image: linear-gradient(90deg, rgba(254, 27, 27, 0.5), rgba(255, 6, 6, 0.3), rgba(254, 53, 27, 0)), url("https://wallpaperaccess.com/full/1245388.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    }
+
+  .about-mid{
+    height: 190vh;
+    width: 100%;
+  }
+
+  .about-mid-head{
+    background-image: url("https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+  }
+
+  .about-classes-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-classes-desc{
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-classes-desc h1{
+    font-size: 80px;
+  }
+
+  .about-classes-desc h1 span{
+    color: red;
+  }
+
+  .about-classes-img{
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(254, 27, 27, 0.5), rgba(255, 6, 6, 0.3), rgba(254, 53, 27, 0)), url("https://w0.peakpx.com/wallpaper/560/825/HD-wallpaper-bodybuilder-gym-hard-healthy-life-happy-thumbnail.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+  }
+
+  .about-classes-btn{
+    display: flex;
+    gap: 30px;
+  }
+
+  .trainers-page-heading{
+    background-image: url("https://www.americansportandfitness.com/cdn/shop/products/master-personal-trainer.jpg?v=1586368360");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+
+  .trainers-page-heading h1{
+    color: white;
+    font-size: 50px;
+  }
+
+  .trainers-page-heading h1 span{
+    color: red;
+  }
+
+  .trainers-page-card{
+    height: 135vh;
+    width: 100%;
+  }
+
+  .trainers-page-card-heading{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .trainers-page-card-heading h1{
+    font-size: 30px;
+    color: white;
+  }
+
+  .trainers-page-card-heading h1 span{
+    color: red;
+  }
+
+  .trainers-page-card-desc{
+    display: grid;
+    grid-template-columns: 350px 350px 350px 350px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+
+  .trainers-body{
+    background-image: linear-gradient(rgba(22, 22, 22, 0.65), rgba(0, 0, 0, 0.60)), url("https://purebredfitness.com.au/wp-content/uploads/2020/08/purebred-fitness-shredded-gym-classes-01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 200px;
+  }
+
+  .trainers-body h1{
+    color: white;
+    font-size: 40px;
+  }
+
+  .trainers-body h1 span{
+    color: red;
+  }
+
+  .membership-heading{
+    background-image: url("https://xplorgym.co.uk/wp-content/uploads/2023/03/cost-of-a-gym-membership-in-2023-2048x942.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .membership-heading h1{
+    font-size: 50px;
+    color: white;
+  }
+
+  .membership-heading h1 span{
+    color: red;
+  }
+
+  .discount{
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(22, 22, 22, 0.65), rgba(0, 0, 0, 0.60)), url("https://marathonhandbook.com/wp-content/uploads/Gym-Terms-6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .discount h1{
+    font-size: 80px;
+  }
+
+  .discount h1 span{
+    color: red;
+  } 
+
+  .discount p{
+    font-size: 40px;
+  }
+
+  .membership-cards{
+    margin-top: 50px;
+    height: 80vh;
+    width: 100%;
+    color: white;
+  }
+
+  .membership-cards-heading{
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  .membership-cards-heading h1{
+    font-size: 40px;
+  }
+
+  .membership-cards-heading h1 span{
+    color: red;
+  }
+
+  .membership-cards-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .membership-body{
+    height: 70vh;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .membership-body h1{
+    color: white;
+  }
+
+  .membership-body h1 span{
+    color: red;
+  }
+
+  .membership-main{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    color: white;
+  }
+
+  .membership-main h2{
+    font-size: 35px;
+    margin: 0;
+    margin-left: 30px;
+    color: red;
+    border-bottom: 2px solid white;
+  }
+
+  .membership-main p{
+    font-size: 20px;
+    margin-left: 30px;
+  }
+
+  .membership-main-one{
+    width: 700px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .membership-perks{
+    background-image: linear-gradient(rgba(22, 22, 22, 0.65), rgba(0, 0, 0, 0.60)), url("https://communityrecmag.com/wp-content/uploads/2022/11/shutterstock_2224616605-750x375.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .membership-community{
+    background-color: black;
+    width: 600px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .membership-environ{
+    background-image: linear-gradient(rgba(22, 22, 22, 0.65), rgba(0, 0, 0, 0.60)), url("https://t3.ftcdn.net/jpg/00/93/55/88/360_F_93558844_zsJSg3nGtgXX0HSToxWJeBjEt1OIyTHo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    }
+
+    .contact-heading{
+      background-image: url("https://assets-global.website-files.com/5ca5fe687e34be0992df1fbe/623c6afbd819ce486425826b_killing-his-workout-2021-08-27-19-14-14-utc-min%20(1)%20(1).jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 70vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .contact-heading h1{
+      font-size: 50px;
+    }
+
+    .contact-heading h1 span{
+      color: red;
+    }
+
+    .contact{
+      height: 70vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 150px;
+      color: white;
+    }
+
+    .contact h2{
+      font-size: 30px;
+    }
+
+    .contact p{
+      font-size: 20px;
+    }
+
+    .contact span{
+      color: red;
+    }
+
+    .contact-msg{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-msg form{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contact-msg input{
+      font-size: 20px;
+      background-color: transparent;
+      margin-bottom: 20px;
+      border: 2px solid grey;
+      color: white;
+    }
+
+    .regular-input{
+      height: 30px;
+      width: 500px;
+    }
+
+    .wide-input{
+      height: 50px;
+      width: 500px;
+    }
+
+    .contact-end{
+      height: 70vh;
+      width: 100%;
+      background-image: linear-gradient(rgba(22, 22, 22, 0.65), rgba(0, 0, 0, 0.60)), url("https://images.303magazine.com/uploads/2021/01/Member_2-1400x600.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 100px;
+    }
+
+    .contact-end h1{
+      color: white;
+      font-size: 50px;
+    }
+
+    .contact-end h1 span{
+      color: red;
+    }
+
+    .schedule{
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      
+    }
+
+    .schedule-heading{
+      color: white;
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .schedule-heading span{
+      color: red;
+    }
+
+    .schedule-table{
+      height: 100%;
+      color: white;
+      display: flex;
+      justify-content: center;
+      
+    }
+
+    .schedule-table table{
+      height: 400px;
+      width: 600px;
+      border: 1px solid grey;
+    }
+
+    .schedule-table table thead tr th{
+      background-color: red;
+      color: white;
+      font-size: 20px;
+      border: 1px solid white;
+      
+      text-align: center;
+    }
+
+    .schedule-time{
+      border: 1px solid white;
+    }
+
+    .schedule-table table tbody tr td{
+      background-color: black;
+      text-align: center;
+    }
+
+    .schedule-table h4{
+      font-size: 20px;
+    }
+
+    .schedule-table p{
+      font-size: 17px;
+    }
